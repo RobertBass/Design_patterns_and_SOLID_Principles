@@ -28,7 +28,7 @@ class PaymentDataValidator:
             print("Invalid payment data")
             raise ValueError("Invalid payment data")
 
-
+@dataclass
 class Notifier:
     def send_confirmation(self, customer_data):
         if "email" in customer_data["contact_info"]:
